@@ -1,0 +1,204 @@
+                                                                 PAGE NO.    1
+
+
+
+             ****************************************************        
+             *                                                  *        
+             *           STAAD.Pro V8i SELECTseries5            *        
+             *           Version  20.07.10.64                   *        
+             *           Proprietary Program of                 *        
+             *           Bentley Systems, Inc.                  *        
+             *           Date=    MAR  6, 2017                  *        
+             *           Time=     1:16:46                      *        
+             *                                                  *        
+             *      USER ID:                                    *        
+             ****************************************************        
+
+
+
+     1. STAAD PLANE
+INPUT FILE: Cables.STD
+     2. START JOB INFORMATION
+     3. ENGINEER DATE 06-MAR-17
+     4. END JOB INFORMATION
+     5. INPUT WIDTH 79
+     6. UNIT METER KN
+     7. JOINT COORDINATES
+     8. 2 0 0 0; 3 0.1 -0.49 0; 4 0.2 -0.96 0; 5 0.3 -1.41 0; 6 0.4 -1.84 0
+     9. 7 0.5 -2.25 0; 8 0.6 -2.64 0; 9 0.7 -3.01 0; 10 0.8 -3.36 0; 11 0.9 -3.69 0
+    10. 12 1 -4 0; 13 1.1 -4.29 0; 14 1.2 -4.56 0; 15 1.3 -4.81 0; 16 1.4 -5.04 0
+    11. 17 1.5 -5.25 0; 18 1.6 -5.44 0; 19 1.7 -5.61 0; 20 1.8 -5.76 0; 21 1.9 -5.89 0
+    12. 22 2 -6 0; 23 2.1 -6.09 0; 24 2.2 -6.16 0; 25 2.3 -6.21 0; 26 2.4 -6.24 0
+    13. 27 2.5 -6.25 0; 28 2.6 -6.24 0; 29 2.7 -6.21 0; 30 2.8 -6.16 0; 31 2.9 -6.09 0
+    14. 32 3 -6 0; 33 3.1 -5.89 0; 34 3.2 -5.76 0; 35 3.3 -5.61 0; 36 3.4 -5.44 0
+    15. 37 3.5 -5.25 0; 38 3.6 -5.04 0; 39 3.7 -4.81 0; 40 3.8 -4.56 0; 41 3.9 -4.29 0
+    16. 42 4 -4 0; 43 4.1 -3.69 0; 44 4.2 -3.36 0; 45 4.3 -3.01 0; 46 4.4 -2.64 0
+    17. 47 4.5 -2.25 0; 48 4.6 -1.84 0; 49 4.7 -1.41 0; 50 4.8 -0.96 0; 51 4.9 -0.49 0
+    18. 52 5 0 0
+    19. MEMBER INCIDENCES
+    20. 2 2 3; 3 3 4; 4 4 5; 5 5 6; 6 6 7; 7 7 8; 8 8 9; 9 9 10; 10 10 11; 11 11 12
+    21. 12 12 13; 13 13 14; 14 14 15; 15 15 16; 16 16 17; 17 17 18; 18 18 19; 19 19 20
+    22. 20 20 21; 21 21 22; 22 22 23; 23 23 24; 24 24 25; 25 25 26; 26 26 27; 27 27 28
+    23. 28 28 29; 29 29 30; 30 30 31; 31 31 32; 32 32 33; 33 33 34; 34 34 35; 35 35 36
+    24. 36 36 37; 37 37 38; 38 38 39; 39 39 40; 40 40 41; 41 41 42; 42 42 43; 43 43 44
+    25. 44 44 45; 45 45 46; 46 46 47; 47 47 48; 48 48 49; 49 49 50; 50 50 51; 51 51 52
+    26. DEFINE MATERIAL START
+    27. ISOTROPIC STAINLESSSTEEL
+    28. E 1.9793E+008
+    29. POISSON 0.3
+    30. DENSITY 76.8195
+    31. ALPHA 1.8E-005
+    32. DAMP 0.03
+    33. END DEFINE MATERIAL
+    34. MEMBER PROPERTY
+    35. 2 TO 51 PRIS YD 0.3
+    36. CONSTANTS
+    37. MATERIAL STAINLESSSTEEL ALL
+    38. SUPPORTS
+     STAAD PLANE                                              -- PAGE NO.    2
+        
+    39. 2 52 FIXED BUT FX FZ MX MY MZ
+    40. LOAD 1 LOADTYPE NONE  TITLE LOAD CASE 1
+    41. MEMBER LOAD
+    42. 25 CON GY -150 2.5
+    43. PERFORM ANALYSIS PRINT ALL
+
+
+
+            P R O B L E M   S T A T I S T I C S
+            -----------------------------------
+
+     NUMBER OF JOINTS         51  NUMBER OF MEMBERS      50
+     NUMBER OF PLATES          0  NUMBER OF SOLIDS        0
+     NUMBER OF SURFACES        0  NUMBER OF SUPPORTS      2
+
+ 
+           SOLVER USED IS THE OUT-OF-CORE BASIC SOLVER
+ 
+     ORIGINAL/FINAL BAND-WIDTH=     1/     1/      6 DOF
+   TOTAL      PRIMARY LOAD CASES =     1, TOTAL DEGREES OF FREEDOM =     151
+   TOTAL LOAD COMBINATION  CASES =     0  SO FAR.
+     SIZE OF STIFFNESS MATRIX =        1 DOUBLE  KILO-WORDS
+     REQRD/AVAIL. DISK SPACE  =     12.1/  74311.8 MB
+
+
+     STAAD PLANE                                              -- PAGE NO.    3
+        
+
+
+   LOADING     1  LOADTYPE NONE  TITLE LOAD CASE 1                            
+   -----------
+
+
+   MEMBER LOAD - UNIT KN   METE
+
+   MEMBER     UDL      L1     L2      CON       L     LIN1     LIN2
+
+  **WARNING** LOAD BEYOND ITS LENGTH. FULL LENGTH ASSUMED. MEMB    25 CASE    1
+              LENGTH=       0.10  LOAD POINT=       2.50
+     25                          -150.0000 GY   0.10
+
+ ***WARNING -  INSTABILITY AT JOINT    52   DIRECTION = FX 
+  PROBABLE CAUSE SINGULAR-ADDING WEAK SPRING 
+  K-MATRIX DIAG=  2.9530730E+04 L-MATRIX DIAG=  1.2369128E-10 EQN NO     150
+  ***NOTE - VERY WEAK SPRING ADDED FOR STABILITY
+
+    **NOTE** STAAD DETECTS INSTABILITIES AS EXCESSIVE LOSS OF SIGNIFICANT DIGITS
+             DURING DECOMPOSITION. WHEN A DECOMPOSED DIAGONAL IS LESS THAN THE 
+             BUILT-IN REDUCTION FACTOR TIMES THE ORIGINAL STIFFNESS MATRIX DIAGONAL,
+             STAAD PRINTS A SINGULARITY NOTICE. THE BUILT-IN REDUCTION FACTOR 
+             IS   1.000E-09
+
+             THE ABOVE CONDITIONS COULD ALSO BE CAUSED BY VERY STIFF OR VERY WEAK 
+             ELEMENTS AS WELL AS TRUE SINGULARITIES.
+
+
+
+FOR LOADING -     1
+APPLIED JOINT EQUIVALENT LOADS
+ JOINT   FORCE-X     FORCE-Y     FORCE-Z      MOM-X       MOM-Y       MOM-Z
+    25 1.00569E-03-3.01975E-04 0.00000E+00 0.00000E+00 0.00000E+00-8.90225E-09
+    26-1.00546E-03-1.50000E+02 0.00000E+00 0.00000E+00 0.00000E+00 3.65410E-04
+
+          STATIC LOAD/REACTION/EQUILIBRIUM SUMMARY FOR CASE NO.     1
+          LOADTYPE NONE  TITLE LOAD CASE 1                            
+
+
+           CENTER OF FORCE BASED ON Y FORCES ONLY (METE).
+         (FORCES IN NON-GLOBAL DIRECTIONS WILL INVALIDATE RESULTS)
+
+                        X =  0.239999735E+01
+                        Y = -0.623999999E+01
+                        Z =  0.000000000E+00
+TOTAL APPLIED LOAD     1
+
+   ***TOTAL APPLIED LOAD ( KN   METE ) SUMMARY (LOADING     1 )
+       SUMMATION FORCE-X =           0.00
+       SUMMATION FORCE-Y =        -150.00
+       SUMMATION FORCE-Z =           0.00
+
+      SUMMATION OF MOMENTS AROUND THE ORIGIN-
+      MX=           0.00  MY=           0.00  MZ=        -360.00
+
+     STAAD PLANE                                              -- PAGE NO.    4
+        
+TOTAL REACTION LOAD    1
+
+   ***TOTAL REACTION LOAD( KN   METE ) SUMMARY (LOADING     1 )
+       SUMMATION FORCE-X =           0.00
+       SUMMATION FORCE-Y =         150.00
+       SUMMATION FORCE-Z =           0.00
+
+      SUMMATION OF MOMENTS AROUND THE ORIGIN-
+      MX=           0.00  MY=           0.00  MZ=         360.00
+
+
+   MAXIMUM DISPLACEMENTS (  CM  /RADIANS) (LOADING      1)
+             MAXIMUMS    AT NODE
+      X =  5.66422E+00       2
+      Y = -8.53058E-01      26
+      Z =  0.00000E+00       0
+      RX=  0.00000E+00       0
+      RY=  0.00000E+00       0
+      RZ= -6.21904E-03       2
+
+
+
+   EXTERNAL AND INTERNAL JOINT LOAD SUMMARY ( KN   METE )-
+
+   JT     EXT FX/   EXT FY/   EXT FZ/    EXT MX/    EXT MY/    EXT MZ/
+          INT FX    INT FY    INT FZ     INT MX     INT MY     INT MZ
+
+                                                                      SUPPORT=1
+     2      0.00      0.00      0.00       0.00       0.00       0.00
+            0.00    -78.00      0.00       0.00       0.00       0.00  011110
+
+    52      0.00      0.00      0.00       0.00       0.00       0.00
+            0.00    -72.00      0.00       0.00       0.00       0.00  011110
+
+
+
+   ************ END OF DATA FROM INTERNAL STORAGE ************
+
+
+    44. FINISH
+
+
+             *********** END OF THE STAAD.Pro RUN ***********         
+
+               **** DATE= MAR  6,2017   TIME=  1:16:50 ****
+
+     STAAD PLANE                                              -- PAGE NO.    5
+        
+         ************************************************************
+         *   For technical assistance on STAAD.Pro, please visit    *
+         *   http://selectservices.bentley.com/en-US/               *
+         *                                                          *
+         *   Details about additional assistance from               *
+         *   Bentley and Partners can be found at program menu      *
+         *   Help->Technical Support                                *
+         *                                                          *
+         *      Copyright (c) 1997-2014 Bentley Systems, Inc.        
+         *                http://www.bentley.com                    *
+         ************************************************************
+                                                                     
